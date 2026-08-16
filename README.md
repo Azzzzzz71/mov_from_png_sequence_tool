@@ -1,213 +1,23 @@
-High‑Quality PNG Sequence to MOV Converter using Apple ProRes 4444
-
-Developed by Kalin — 2026
-
-Този проект предоставя висококачествен инструмент за конвертиране на PNG секуенси в MOV видео файлове, използвайки професионалния кодек Apple ProRes 4444.
-
-Инструментът е създаден с фокус върху:
-
-много добро качество на изображението
-
-коректна цветова информация
-
-опростен интерактивен интерфейс
-
-ефикасна обработка на големи секуенси
-
-Проектът включва Python изходен код, PyInstaller конфигурация, EXE билд и пълна история на разработката.
-
-png-to-mov-converter/
-│
-├── src/
-│   └── create_prores_03.py        # Final working Python source code
-│
-├── exe/
-│   └── PNGtoMOV.exe               # Compiled executable (PyInstaller)
-│
-├── spec/
-│   └── PNGtoMOV.spec              # PyInstaller build specification
-│
-├── wip/
-│   ├── v0.1/                      # Early development versions
-│   ├── v0.2/                      # Intermediate versions
-│   └── v1.0/                      # Pre-final versions
-│
-└── README.md                      # Project documentation
-
-Overview
-Инструментът конвертира PNG секуенси в MOV файлове с ProRes 4444, което е индустриален стандарт за:
-
-VFX
-
-3D рендери
-
-Motion Graphics
-
-Видео постпродукция
-
-Анимация
-
-Кодекът ProRes 4444 осигурява:
-
-пълна цветова дълбочина
-
-алфа канал
-
-минимални артефакти
-
-висока съвместимост
-
-🔧 Source Code (src/create_prores_03.py)
-Файлът create_prores_03.py съдържа:
-
-логиката за зареждане на PNG секуенс
-
-обработка на пътища
-
-генериране на MOV файл
-
-избор на ProRes 4444 кодек
-
-управление на грешки
-
-оптимизации за бърза обработка
-
-Това е финалната работеща версия, използвана за създаване на EXE файла.
-
-
-🏗️ Build System (spec/PNGtoMOV.spec)
-Файлът PNGtoMOV.spec съдържа:
-
-конфигурацията за PyInstaller
-
-пътища към ресурси
-
-настройки за един файл или една папка
-
-включени зависимости
-
-параметри за ProRes обработката
-
-build логика за създаване на PNGtoMOV.exe
-
-Този файл е важен за:
-
-възстановяване на EXE билд
-
-доказване на авторство
-
-повторно компилиране
-
-анализ на структурата на проекта
-
-💻 Executable (exe/PNGtoMOV.exe)
-PNGtoMOV.exe е готовият инструмент, който:
-
-приема PNG секуенси
-
-генерира MOV файл
-
-използва ProRes 4444
-
-има опростен интерактивен интерфейс
-
-работи бързо и стабилно
-
-не изисква Python инсталация
-
-Това е версията, която потребителите използват.
-
-🧪 Development History (wip/)
-Папката wip/ съдържа:
-
-ранни версии
-
-тестови версии
-
-версии с грешки
-
-полу‑работещи версии
-
-експериментални функции
-
-Това е доказателство за авторство, защото показва:
-
-процес на разработка
-
-еволюция на кода
-
-реални човешки промени
-
-тестове и поправки
-
-ИИ не генерира WIP версии → това доказва, че проектът е твой.
-
-📦 Installation & Usage
-✔️ Using the EXE (recommended)
-Постави PNG секуенса в папка
-
-Стартирай PNGtoMOV.exe
-
-Избери входна директория
-
-Избери име на изходния MOV файл
-
-Генерирай ProRes 4444 видео
-
-✔️ Using the Python version
-python create_prores_03.py
-Изисква:
-
-Python 3.10+
-
-ffmpeg с ProRes 4444 поддръжка
-
-🎥 Supported Formats
-Input:
-PNG sequence (frame_0001.png, frame_0002.png, …)
-
-Output:
-MOV (Apple ProRes 4444)
-
-🔐 License
-Проектът е собственост на Kalin.
-Всички права запазени.
-Не е разрешено копиране, модификация или разпространение без разрешение.
-
-👤 Author
-Kalin (2026)  
-Developer, 3D Technical Artist, Tool Creator.
-
-✔️ Future Improvements (Realistic Roadmap)
-Добавяне на GUI интерфейс
-
-Подобрено управление на пътища и секуенси
-
-Оптимизация на скоростта при големи PNG секуенси
-
-Логване на процеса (progress bar, статуси)
-
-По‑добра обработка на грешки
-
-Възможност за избор на изходна директория
-
-Възможност за избор на име на файла
-
-Поддръжка на различни frame rate стойности
-
-🔥 Професионален LICENSE файл (готов за GitHub)
-Това е напълно легален, професионален лиценз, който:
-
-доказва авторство
-
-забранява копиране
-
-забранява разпространение
-
-забранява модификация
-
-защитава EXE, кода, spec файла и структурата
-
-е подходящ за индивидуален разработчик
-
-е съвместим с GitHub
+# PNG-to-MOV Sequence Converter Tool
+
+This tool converts numbered PNG image sequences into MOV video files.  
+Designed for animation, VFX, motion graphics and post-production workflows.
+
+## Features
+- Converts PNG sequences to MOV format
+- Simple and fast workflow
+- Supports ProRes output (depending on system codecs)
+- Includes application icon prototypes
+- Screenshots available in /screenshots/
+
+## Project Structure
+- src/ – Python source code
+- spec/ – PyInstaller spec file
+- wip/ – Work-in-progress versions
+- screenshots/ – UI and workflow images
+
+## Executable
+The compiled EXE is available in the Releases section.
+
+## Version
+v1.0.0 – First public release
